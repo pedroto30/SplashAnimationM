@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.splashanimationm.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.splashanimationm.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.splashanimationm.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <activity
+        android:id="@+id/login5"
+        android:name="com.example.splashanimationm.Login"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/activityWeb"
+        android:name="com.example.splashanimationm.ActivityWeb"
+        android:label="activity_web"
+        tools:layout="@layout/activity_web" />
+    <activity
+        android:id="@+id/activityWeb1"
+        android:name="com.example.splashanimationm.ActivityWeb1"
+        android:label="activity_web1"
+        tools:layout="@layout/activity_web1" />
+    <activity
+        android:id="@+id/camara"
+        android:name="com.example.splashanimationm.Camara"
+        android:label="activity_camara"
+        tools:layout="@layout/activity_camara" />
+</navigation>

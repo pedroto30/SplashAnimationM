@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo02"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="363dp"
+                android:layout_height="185dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/aplicaiones" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:fillViewport="true"
+            android:foreground="@drawable/sinfondo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="32dp">
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:backgroundTint="@color/colorTextoNegro"
+                    android:backgroundTintMode="screen"
+                    android:fontFamily="@font/bangers"
+                    android:textSize="30dp"
+                    android:foreground="@drawable/sinfondo"
+                    android:foregroundGravity="center"
+                    android:onClick="login"
+                    android:text="CALCULADORA"
+                    android:textColor="@color/colorPrimary"
+                    android:theme="@style/TransparenciaBoton"
+                    app:cornerRadius="20dp"
+                    app:icon="@drawable/calculadora"
+                    app:strokeColor="#E8DDDD" />
+
+                <Button
+                    android:id="@+id/Multimedia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/bangers"
+                    android:textSize="20dp"
+                    android:foreground="@drawable/sinfondo"
+                    android:onClick="Multimedia"
+                    android:text="MULTIMEDIA"
+                    android:textColor="@color/colorPrimary"
+                    android:theme="@style/TransparenciaBoton"
+                    app:cornerRadius="20dp"
+                    app:icon="@drawable/calculadora" />
+
+                <Button
+                    android:id="@+id/login3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/bangers"
+                    android:textSize="20dp"
+                    android:onClick="web"
+                    android:text="WEB"
+                    android:textColor="@color/colorPrimary"
+                    android:theme="@style/TransparenciaBoton"
+                    app:cornerRadius="20dp"
+                    app:icon="@drawable/calculadora" />
+
+                <Button
+                    android:id="@+id/btnApk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/bangers"
+                    android:textSize="20dp"
+                    android:onClick="login"
+                    android:text="App Youtube"
+                    android:textColor="@color/colorPrimary"
+                    android:theme="@style/TransparenciaBoton"
+                    app:cornerRadius="20dp"
+                    app:icon="@drawable/calculadora"
+                    tools:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btnllamar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/bangers"
+                    android:textSize="20dp"
+                    android:onClick="llamar"
+                    android:text="Llamar"
+                    android:textColor="@color/colorPrimary"
+                    android:theme="@style/TransparenciaBoton"
+                    app:cornerRadius="20dp"
+                    app:icon="@drawable/calculadora"
+                    tools:visibility="visible" />
+                <Button
+                    android:id="@+id/btnwhatsapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/bangers"
+                    android:textSize="20dp"
+                    android:onClick="Whatsapp"
+                    android:text="whatsapp"
+                    android:textColor="@color/colorPrimary"
+                    android:theme="@style/TransparenciaBoton"
+                    app:cornerRadius="20dp"
+                    app:icon="@drawable/calculadora"
+                    tools:visibility="visible" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/PreguntaCuenta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Retornar al menu Principal?"
+                        android:textColor="@color/colorTextoBlanco" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toEndOf="@id/PreguntaCuenta"
+                        android:layout_toRightOf="@id/PreguntaCuenta"
+                        android:clickable="true"
+                        android:onClick="salir"
+                        android:text="click"
+                        android:textColor="@color/colorTextoBlanco"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
